@@ -64,6 +64,16 @@ body {
 
 /* Additional style improvements */
 
+.rodape {
+    text-align: center;
+    padding: 1rem 0;
+    color: var(--claro);
+    background-color: var(--maisEscuro);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--primaria);
+    margin-top: 2rem;
+}
+
 .cabecalho {
     text-align: center;
     padding: 6rem 1rem 4rem 1rem;
@@ -146,6 +156,17 @@ body {
     object-fit: cover;
     border-radius: 6px;
     margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.projeto-imagem-ampliada {
+    position: relative;
+    z-index: 200;
+    transform: scale(1.8);
+    transition: transform 0.3s ease;
+    cursor: zoom-out;
+    box-shadow: 0 0 20px rgba(124, 58, 173, 0.9);
+    border-radius: 10px;
 }
 
 .info-projetos, .projeto-titulo {

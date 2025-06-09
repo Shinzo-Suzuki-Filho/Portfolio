@@ -1,5 +1,5 @@
 function enviarWhatsApp(event) {
-    event.preventDefault();
+  event.preventDefault();
 
   const nome = document.getElementById("nome").value;
   const mensagem = document.getElementById("mensagem").value;
@@ -21,4 +21,15 @@ document.addEventListener("DOMContentLoaded", function () {
   if (anoSpan) {
     anoSpan.textContent = new Date().getFullYear();
   }
+
+  // Add click event listeners to all project images to open in new tab and keep visual effects
+  const projectImages = document.querySelectorAll('.projeto-imagem');
+  projectImages.forEach(img => {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', () => {
+      // Open image src in new tab
+      window.open(img.src, '_blank');
+    });
+  });
 });
+
